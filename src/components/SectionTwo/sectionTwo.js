@@ -5,13 +5,13 @@ import {
     useParams
   } from "react-router-dom";
 
-  const Hero = () => {
+  const SectionTwo = () => {
   return (
-    <div className="hero-container">
-      <h1>Hero</h1>
+    <div className="section-two-container">
+      <h1>Section Two</h1>
     </div>
   );
 
 };
 
-export default Hero;
+export default SectionTwo;
