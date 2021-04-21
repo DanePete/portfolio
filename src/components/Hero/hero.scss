@@ -115,7 +115,8 @@
   border-radius: 1rem;
   margin: 2rem 0rem;
   padding: 2rem;
-  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  // box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgb(34 33 81 / 1%), 28px 28px 28px 0 rgb(34 33 81 / 25%);
   justify-content: space-between;
 }
 
