@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion, useAnimation, AnimatePresence } from "framer-motion";
+import { motion, useAnimation, AnimatePresence, useViewportScroll } from "framer-motion";
 import {
     BrowserRouter as Router,
     useHistory,
@@ -8,9 +8,9 @@ import {
 
   const Hero = () => {
   const controls = useAnimation()
-
   const list = { hidden: { opacity: 0 } }
-const item = { hidden: { x: -10, opacity: 0 } }
+  const item = { hidden: { x: -10, opacity: 0 } }
+  const { scrollYProgress } = useViewportScroll();
 
   useEffect(() => {
     controls.start(i => ({
@@ -42,41 +42,93 @@ const item = { hidden: { x: -10, opacity: 0 } }
           </div>
         </div>
 
-        <div className="cards">
+        <div className="glass-container">
+          <div class="dashboard">
+            <div class="user">
+              <img src="./images/img.png" alt="" />
+              <h3>Dane Petersen</h3>
+              <p>Pro Member</p>
+            </div>
+            <div class="links">
+              <div class="link">
+                <img src="./images/img1.png" alt="" />
+                <h2>About</h2>
+              </div>
+              <div class="link">
+                <img src="./images/img2.png" alt="" />
+                <h2>Projects</h2>
+              </div>
+              <div class="link">
+                <img src="./images/img3.png" alt="" />
+                <h2>Blog</h2>
+              </div>
+              <div class="link">
+                <img src="./images/img4.png" alt="" />
+                <h2>Other?</h2>
+              </div>
+            </div>
+            <div class="pro">
+              <h2>Download Resume</h2>
+              <img src="./images/img5.png" alt="" />
+            </div>
+          </div>
 
-        <motion.div className="card"
-          initial={{y: -1000}}
-          animate={{y: 10}}
-          transition={{ duration: 6 }}
-        >
-            <h5>Example</h5>
-        </motion.div>
-        <motion.div className="card"
-          initial={{y: -1000}}
-          animate={{y: 10}}
-          transition={{ duration: 5 }}
-        >
-            <h5>Example</h5>
-        </motion.div>
-        <motion.div className="card"
-          initial={{y: -1000}}
-          animate={{y: 10}}
-          transition={{ duration: 4 }}
-        >
-            <h5>Example</h5>
-        </motion.div>
-        <motion.div className="card"
-          initial={{y: -1000}}
-          animate={{y: 10}}
-          transition={{ duration: 3 }}
-        >
-            <h5>Example</h5>
-        </motion.div>       
+          <div className="cards">
+          <motion.div className="card"
+              initial={{y: -1000}}
+              animate={{y: 10}}
+              transition={{ duration: 9 }}
+            >
+                <h5>Example</h5>
+            </motion.div>
+          <motion.div className="card"
+              initial={{y: -1000}}
+              animate={{y: 10}}
+              transition={{ duration: 8 }}
+            >
+                <h5>Example</h5>
+            </motion.div>
+          <motion.div className="card"
+              initial={{y: -1000}}
+              animate={{y: 10}}
+              transition={{ duration: 7 }}
+            >
+                <h5>Example</h5>
+            </motion.div>
+            <motion.div className="card"
+              initial={{y: -1000}}
+              animate={{y: 10}}
+              transition={{ duration: 6 }}
+            >
+                <h5>Example</h5>
+            </motion.div>
+            <motion.div className="card"
+              whileTap={{ scale: 0.8 }}
+                initial={{y: -1000}}
+              animate={{y: 10}}
+              transition={{ duration: 5 }}
+            >
+                <h5>Example</h5>
+            </motion.div>
+            <motion.div className="card"
+              initial={{y: -1000}}
+              animate={{y: 10}}
+              transition={{ duration: 4 }}
+            >
+                <h5>Example</h5>
+            </motion.div>
+            <motion.div className="card"
+              initial={{y: -1000}}
+              animate={{y: 10}}
+              transition={{ duration: 3 }}
+            >
+                <h5>Example</h5>
+            </motion.div>       
+          </div>
         </div>
       </section>
     </div>
   );
-
 };
 
 export default Hero;
