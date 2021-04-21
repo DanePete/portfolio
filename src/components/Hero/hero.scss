@@ -115,8 +115,11 @@
   border-radius: 1rem;
   margin: 2rem 0rem;
   padding: 2rem;
-  // box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
-  background: linear-gradient(to right bottom, rgba(255,255,255,0.5),rgba(255,255,255,0.1));
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  box-shadow:
+    1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
   justify-content: space-between;
 }
 
