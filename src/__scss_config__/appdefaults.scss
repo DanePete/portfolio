@@ -8,6 +8,16 @@ $tertiaryColor: #EFEEEE;
 $quaternaryColor: #F9A26C;
 $quinaryColor: #F26627;
 
+/*
+* Font Families for project - Default is Roboto
+*/
+// font-family: 'Dancing Script', cursive;
+// font-family: 'Lato', sans-serif;
+// font-family: 'Noto Sans JP', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
