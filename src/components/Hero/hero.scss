@@ -21,15 +21,19 @@
   background: linear-gradient(to right bottom, rgba(255,255,255,0.5),rgba(255,255,255,0.1));
   border-radius: 2rem;
   backdrop-filter: blur(2rem);
-
+  
   transform:
-    perspective(750px)
-    translate3d(0px, 0px, -250px)
-    rotateX(32deg)
-    scale(0.9, 0.9);
-  border-radius: 20px;
-  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
-  transition: 0.4s ease-in-out transform;
+    rotateX(51deg)
+    rotateZ(43deg);
+  transform-style: preserve-3d;
+  border-radius: 32px;
+  box-shadow:
+    1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  transition:
+    .4s ease-in-out transform,
+    .4s ease-in-out box-shadow;
 
   &:hover {
     transform: translate3d(0px, 0px, -250px);
