@@ -22,6 +22,12 @@ const item = { hidden: { x: -10, opacity: 0 } }
 
   return (
     <div className="hero-container">
+      <div className="header-section">
+        <h1>Dane Petersen</h1>
+        <i>Full Stack Web Developer, </i>
+        <i>Designer, </i>
+        <i>Mentor,</i>
+      </div>
       <div className="cube"></div>
       <div className="cube"></div>
       <div className="cube"></div>
