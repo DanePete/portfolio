@@ -8,7 +8,13 @@ import {
   const Hero = () => {
   return (
     <div className="hero-container">
-      <h1>Hero</h1>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <div className="cube"></div>
+      <section className="glass"></section>
     </div>
   );
 
