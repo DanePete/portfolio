@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import {
     BrowserRouter as Router,
     useHistory,
@@ -42,37 +42,36 @@ const item = { hidden: { x: -10, opacity: 0 } }
           </div>
         </div>
 
-
-        <motion.ul animate="hidden" variants={list}>
-    <motion.li variants={item} />
-    <motion.li variants={item} />
-    <motion.li variants={item} />
-  </motion.ul>
-
-
-        <ul>
-        <motion.li custom={0} animate={controls} />
-        <motion.li custom={1} animate={controls} />
-        <motion.li custom={2} animate={controls} />
-        </ul>
-
-
         <div className="cards">
-          <motion.div custom={0} animate={controls} className="card">
+
+        <motion.div className="card"
+          initial={{y: -1000}}
+          animate={{y: 10}}
+          transition={{ duration: 6 }}
+        >
             <h5>Example</h5>
-          </motion.div>
-          <div className="card">
+        </motion.div>
+        <motion.div className="card"
+          initial={{y: -1000}}
+          animate={{y: 10}}
+          transition={{ duration: 5 }}
+        >
             <h5>Example</h5>
-          </div>
-          <div className="card">
+        </motion.div>
+        <motion.div className="card"
+          initial={{y: -1000}}
+          animate={{y: 10}}
+          transition={{ duration: 4 }}
+        >
             <h5>Example</h5>
-          </div>
-          <div className="card">
+        </motion.div>
+        <motion.div className="card"
+          initial={{y: -1000}}
+          animate={{y: 10}}
+          transition={{ duration: 3 }}
+        >
             <h5>Example</h5>
-          </div>
-          <div className="card">
-            <h5>Example</h5>
-          </div>          
+        </motion.div>       
         </div>
       </section>
     </div>
