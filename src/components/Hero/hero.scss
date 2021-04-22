@@ -1,5 +1,16 @@
 @import "../../__scss_config__/appdefaults.scss";
 
+.work-in-progress {
+  color: white;
+  position: relative;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-weight: bold;
+  font-size: 64px;
+  opacity: 0.4;
+}
+
 .hero-container {
   height: 100vh;
   background: linear-gradient(
@@ -14,12 +25,14 @@
 }
 
 .header-section {
-  font-size: 24px;
+  font-size: 34px;
   color: white;
   position: absolute;
   font-family: 'Dancing Script', cursive;
-   top: 0;
+  top: 0;
   left: 50px;
+  font-weight: bold;
+  opacity: 0.5;
 }
 
 // what i'm going for here is a like a future ipad kinda thing (display);

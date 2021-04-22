@@ -22,12 +22,14 @@ import {
 
   return (
     <div className="hero-container">
+      <div className="work-in-progress"></div>
       <div className="header-section">
         <h1>Dane Petersen</h1>
         <i>Full Stack Web Developer, </i>
         <i>Designer, </i>
         <i>Mentor,</i>
       </div>
+      <h2 className="work-in-progress">THIS IS A WORK IN PROGRESS</h2>
       <div className="cube"></div>
       <div className="cube"></div>
       <div className="cube"></div>
@@ -74,6 +76,9 @@ import {
           </div>
 
           <div className="cards">
+
+          {/* TODO: Convert to loop */}
+
           <motion.div className="card"
               initial={{y: -1000}}
               animate={{y: 10}}
