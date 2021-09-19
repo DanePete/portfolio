@@ -41,7 +41,7 @@ import {
           <div className="notiication-center">
             <div className="red-dot"></div>
             <div className="yellow-dot"></div>
-          </div>
+          </div> 
         </div>
 
         <div className="glass-container">
@@ -84,7 +84,7 @@ import {
               animate={{y: 10}}
               transition={{ duration: 9 }}
             >
-                <h5>Example</h5>
+              <h5>Example</h5>
             </motion.div>
           <motion.div className="card"
               initial={{y: -1000}}
