@@ -11,6 +11,11 @@ import {
   const list = { hidden: { opacity: 0 } }
   const item = { hidden: { x: -10, opacity: 0 } }
   const { scrollYProgress } = useViewportScroll();
+  const history = useHistory();
+
+  function goTo() {
+    window.location.assign('https://github.com/DanePete');
+  }
 
   useEffect(() => {
     controls.start(i => ({
@@ -26,8 +31,7 @@ import {
       <div className="header-section">
         <h1>Dane Petersen</h1>
         <i>Full Stack Web Developer, </i>
-        <i>Designer, </i>
-        <i>Mentor,</i>
+        <i>Designer</i>
       </div>
       <h2 className="work-in-progress">THIS IS A WORK IN PROGRESS</h2>
       <div className="cube"></div>
@@ -54,11 +58,11 @@ import {
             <div class="links">
               <div class="link">
                 <img src="./images/img1.png" alt="" />
-                <h2>About</h2>
+                <h2>Projects</h2>
               </div>
               <div class="link">
                 <img src="./images/img2.png" alt="" />
-                <h2>Projects</h2>
+                <h2 onClick={goTo}>GitHub</h2>
               </div>
               <div class="link">
                 <img src="./images/img3.png" alt="" />
@@ -66,7 +70,7 @@ import {
               </div>
               <div class="link">
                 <img src="./images/img4.png" alt="" />
-                <h2>Other?</h2>
+                <h2>About</h2>
               </div>
             </div>
             <div class="pro">
@@ -84,14 +88,14 @@ import {
               animate={{y: 10}}
               transition={{ duration: 9 }}
             >
-              <h5>Example</h5>
+              <h5>Project 1</h5>
             </motion.div>
           <motion.div className="card"
               initial={{y: -1000}}
               animate={{y: 10}}
               transition={{ duration: 8 }}
             >
-                <h5>Example</h5>
+                <h5>Project 2</h5>
             </motion.div>
           <motion.div className="card"
               initial={{y: -1000}}
@@ -105,7 +109,7 @@ import {
               animate={{y: 10}}
               transition={{ duration: 6 }}
             >
-                <h5>Example</h5>
+                <h5>Project 3</h5>
             </motion.div>
             <motion.div className="card"
               whileTap={{ scale: 0.8 }}
@@ -113,21 +117,21 @@ import {
               animate={{y: 10}}
               transition={{ duration: 5 }}
             >
-                <h5>Example</h5>
+                <h5>Project 4</h5>
             </motion.div>
             <motion.div className="card"
               initial={{y: -1000}}
               animate={{y: 10}}
               transition={{ duration: 4 }}
             >
-                <h5>Example</h5>
+                <h5>Project 5</h5>
             </motion.div>
             <motion.div className="card"
               initial={{y: -1000}}
               animate={{y: 10}}
               transition={{ duration: 3 }}
             >
-                <h5>Example</h5>
+                <h5>Project 6</h5>
             </motion.div>       
           </div>
         </div>

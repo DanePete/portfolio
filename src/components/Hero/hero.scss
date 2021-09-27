@@ -7,7 +7,7 @@
   right: 30px;
   top: 30px;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 52px;
   opacity: 0.4;
 }
 
@@ -252,6 +252,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.link h2 {
+  cursor: pointer;
 }
 
 // .card {
