@@ -13,7 +13,7 @@ import {
   const { scrollYProgress } = useViewportScroll();
   const history = useHistory();
 
-  function goTo() {
+  function goToGitHub() {
     window.location.assign('https://github.com/DanePete');
   }
 
@@ -62,7 +62,8 @@ import {
               </div>
               <div class="link">
                 <img src="./images/img2.png" alt="" />
-                <h2 onClick={goTo}>GitHub</h2>
+                <h2 onClick={goToGitHub}>GitHub</h2>
+                <a href="https://yourLink.com" target="_blank" rel="noopener noreferrer">Your Link</a>
               </div>
               <div class="link">
                 <img src="./images/img3.png" alt="" />
