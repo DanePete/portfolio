@@ -62,7 +62,6 @@ import {
               </div>
               <div class="link">
                 <img src="./images/img2.png" alt="" />
-                <h2 onClick={goToGitHub}>GitHub</h2>
                 <a href="https://github.com/DanePete" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
               <div class="link">
