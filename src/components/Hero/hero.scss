@@ -230,6 +230,14 @@ main {
   font-weight: 600;
 }
 
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  background: none !important;
+  background-color: none !important;
+}
+
 /* GAMES */
 .status {
   margin-bottom: 3rem;

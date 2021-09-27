@@ -63,7 +63,7 @@ import {
               <div class="link">
                 <img src="./images/img2.png" alt="" />
                 <h2 onClick={goToGitHub}>GitHub</h2>
-                <a href="https://yourLink.com" target="_blank" rel="noopener noreferrer">Your Link</a>
+                <a href="https://yourLink.com" target="_blank" rel="noopener noreferrer">GitHub</a>
               </div>
               <div class="link">
                 <img src="./images/img3.png" alt="" />
