@@ -34,6 +34,11 @@
   filter:brightness(1.5) contrast(2);
 }
 
+.animate__animated.animate__jello {
+  --animate-duration: 120s;
+}
+
+
 .frame:nth-child(1) {
   transform: rotate(40deg) translate(0px) translateZ(0px);
   opacity: 1.00;
