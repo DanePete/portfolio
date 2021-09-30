@@ -66,7 +66,7 @@ import {
           </div>
         </span>
         <image />
-        <img src="../../assets/tenor.gif"></img>
+        <img src={image}></img>
       </div>
 
     </div>
