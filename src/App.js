@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.scss';
 import Hero from './components/Hero/hero';
 import SectionTwo from './components/SectionTwo/sectionTwo';
+import LandingHero from './components/LandingHero/LandingHero';
 import {
   HashRouter as Router,
   Redirect,
@@ -21,7 +22,9 @@ function App() {
               exact
               path="/home"
             >
+              <LandingHero />
               <Hero />
+              <SectionTwo />
             </Route>
             {/* If none of the other routes matched, we will show a 404. */}
             <Route>

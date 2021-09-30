@@ -1,0 +1,92 @@
+@import "../../__scss_config__/appdefaults.scss";
+
+.landing-hero-container {
+  background: black;
+  // background: rgb(63,94,251);
+  // background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  // background-image: url("landinghero.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  height: 100vh;
+}
+
+
+.infinity-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 50px;
+}
+
+.frame {
+  width: 900px;
+  height: 900px;
+  position:absolute;
+  border-radius: 50px;
+  transform: rotate(40deg) translate(0px) translateZ(0px);
+  box-shadow: 0px 0px 20px #00ccff,
+  inset 0px 0px 20px #00ccff,
+  0px 0px 60px #ff00c8,
+  inset 0px 0px 60px #ff00c8;
+  filter:brightness(1.5) contrast(2);
+}
+
+.frame:nth-child(1) {
+  transform: rotate(40deg) translate(0px) translateZ(0px);
+  opacity: 1.00;
+}
+.frame:nth-child(2) {
+  transform: rotate(40deg) translate(50px) translateZ(-10px);
+  opacity: 0.9;
+}
+.frame:nth-child(3) {
+  transform: rotate(40deg) translate(100px) translateZ(-20px);
+  opacity: 0.85;
+}
+.frame:nth-child(4) {
+  transform: rotate(40deg) translate(150px) translateZ(-30px);
+  opacity: 0.80;
+}
+.frame:nth-child(5) {
+  transform: rotate(40deg) translate(200px) translateZ(-40px);
+  opacity: 0.75;
+}
+.frame:nth-child(6) {
+  transform: rotate(40deg) translate(250px) translateZ(-50px);
+  opacity: 0.70;
+}
+.frame:nth-child(7) {
+  transform: rotate(40deg) translate(300px) translateZ(-60px);
+  opacity: 0.65;
+}
+.frame:nth-child(8) {
+  transform: rotate(40deg) translate(350px) translateZ(-70px);
+  opacity: 0.60;
+}
+.frame:nth-child(9) {
+  transform: rotate(40deg) translate(400px) translateZ(-80px);
+  opacity: 0.55;
+}
+.frame:nth-child(10) {
+  transform: rotate(40deg) translate(450px) translateZ(-90px);
+  opacity: 0.50;
+}
+.frame:nth-child(11) {
+  transform: rotate(40deg) translate(500px) translateZ(-100px);
+  opacity: 0.4;
+}
+.frame:nth-child(12) {
+  transform: rotate(40deg) translate(550px) translateZ(-110px);
+  opacity: 0.3;
+}
+.frame:nth-child(13) {
+  transform: rotate(40deg) translate(600px) translateZ(-120px);
+  opacity: 0.2;
+}
+.frame:nth-child(14) {
+  transform: rotate(40deg) translate(650px) translateZ(-130px);
+  opacity: 0.1;
+}
