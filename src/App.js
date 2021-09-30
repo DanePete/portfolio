@@ -26,7 +26,7 @@ function App() {
               <MenuNav />
               <LandingHero />
               <Hero />
-              <SectionTwo />
+              {/* <SectionTwo /> */}
             </Route>
             {/* If none of the other routes matched, we will show a 404. */}
             <Route>
