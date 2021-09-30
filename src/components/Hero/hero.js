@@ -33,7 +33,7 @@ import {
         <i>Full Stack Web Developer, </i>
         <i>Designer</i>
       </div>
-      <h2 className="work-in-progress">THIS IS A WORK IN PROGRESS</h2>
+      {/* <h2 className="work-in-progress">THIS IS A WORK IN PROGRESS</h2> */}
       <div className="cube"></div>
       <div className="cube"></div>
       <div className="cube"></div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import * as THREE from 'three';
 import "animate.css"
 import mojs from '@mojs/core'
 import { slide as Menu } from 'react-burger-menu'
@@ -12,10 +13,31 @@ import {
 
   const LandingHero = () => {
   const controls = useAnimation()
-  const list = { hidden: { opacity: 0 } }
-  const item = { hidden: { x: -10, opacity: 0 } }
-  const { scrollYProgress } = useViewportScroll();
-  const history = useHistory();
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+  const renderer = new THREE.WebGLRenderer();
+  renderer.setSize( window.innerWidth, window.innerHeight );
+  document.body.appendChild( renderer.domElement );
+
+  const geometry = new THREE.BoxGeometry();
+  const material = new THREE.MeshBasicMaterial( { color: 0xfff, flatShading: true, fog: true, reflectivity:true } );
+  const cube = new THREE.Mesh( geometry, material );
+  scene.add( cube );
+
+  camera.position.z = 5;
+
+  const animate = function () {
+    requestAnimationFrame( animate );
+
+    cube.rotation.x += 0.03;
+    cube.rotation.y += 0.01;
+
+    renderer.render( scene, camera );
+  };
+
+  animate();
+
 
   function goToGitHub() {
     window.location.assign('https://github.com/DanePete');
@@ -39,7 +61,7 @@ import {
         <i>Full Stack Web Developer, </i>
         <i>Designer</i>
       </div>
-      <div id="bouncyCircle"></div>
+      {/* <div id="bouncyCircle"></div>
       <div className="infinity-container">
         <div class="frame animate__animated animate__rubberBand animate__delay-5s animate__infinite"></div>
         <div class="frame animate__animated animate__rubberBand animate__delay-5s animate__infinite"></div>
@@ -54,7 +76,7 @@ import {
         <div class="frame animate__animated animate__rubberBand animate__delay-1.5s animate__infinite"></div>
         <div class="frame animate__animated animate__rubberBand animate__delay-1s animate__infinite"></div>
         <div class="frame animate__animated animate__rubberBand animate__delay-0.5s animate__infinite"></div>
-      </div>
+      </div> */}
 
       <div id="dance">
         <span class="thought">
