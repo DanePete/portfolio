@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "animate.css"
 import mojs from '@mojs/core'
+import { slide as Menu } from 'react-burger-menu'
 import { motion, useAnimation, AnimatePresence, useViewportScroll } from "framer-motion";
 import {
     BrowserRouter as Router,
@@ -44,8 +45,15 @@ import {
     }))
   }, [])
 
+  
+
   return (
     <div className="landing-hero-container">
+      <div className="header-section">
+        <h1>Dane Petersen</h1>
+        <i>Full Stack Web Developer, </i>
+        <i>Designer</i>
+      </div>
       <div id="bouncyCircle"></div>
       <div className="infinity-container">
         <div class="frame animate__animated animate__rubberBand animate__delay-5s animate__infinite"></div>

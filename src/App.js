@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.scss';
 import Hero from './components/Hero/hero';
 import SectionTwo from './components/SectionTwo/sectionTwo';
+import MenuNav from './components/MenuNav/MenuNav'
 import LandingHero from './components/LandingHero/LandingHero';
 import {
   HashRouter as Router,
@@ -22,6 +23,7 @@ function App() {
               exact
               path="/home"
             >
+              <MenuNav />
               <LandingHero />
               <Hero />
               <SectionTwo />
