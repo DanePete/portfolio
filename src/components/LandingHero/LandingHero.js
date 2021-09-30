@@ -48,19 +48,19 @@ import {
     <div className="landing-hero-container">
       <div id="bouncyCircle"></div>
       <div className="infinity-container">
-        <div class="frame animate__animated animate__jello animate__delay-16s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-15s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-14s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-13s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-12s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-11s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-10 animate__infinites"></div>
-        <div class="frame animate__animated animate__jello animate__delay-9s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-8s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-7s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-6s animate__infinite"></div>
         <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
+        <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
+        <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
+        <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
+        <div class="frame animate__animated animate__jello animate__delay-4.5s animate__infinite"></div>
         <div class="frame animate__animated animate__jello animate__delay-4s animate__infinite"></div>
+        <div class="frame animate__animated animate__jello animate__delay-3.5s animate__infinites"></div>
+        <div class="frame animate__animated animate__jello animate__delay-3s animate__infinite"></div>
+        <div class="frame animate__animated animate__jello animate__delay-2.5s animate__infinite"></div>
+        <div class="frame animate__animated animate__jello animate__delay-2s animate__infinite"></div>
+        <div class="frame animate__animated animate__jello animate__delay-1.5s animate__infinite"></div>
+        <div class="frame animate__animated animate__jello animate__delay-1s animate__infinite"></div>
+        <div class="frame animate__animated animate__jello animate__delay-0.5s animate__infinite"></div>
       </div>
     </div>
   );
