@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "animate.css"
 import mojs from '@mojs/core'
 import { slide as Menu } from 'react-burger-menu'
+import image from '../../assets/tenor.gif'
 import { motion, useAnimation, AnimatePresence, useViewportScroll } from "framer-motion";
 import {
     BrowserRouter as Router,
@@ -10,28 +11,11 @@ import {
   } from "react-router-dom";
 
   const LandingHero = () => {
-
-
-    const bouncyCircle = new mojs.Shape({
-      // parent:       '#bouncyCircle',
-      shape:        'circle',
-      fill:         {'#F64040': '#FC46AD'},
-      radius:       {20: 80},
-      duration:     2000,
-      isYoyo:       true,
-      isShowStart:  true,
-      easing:       'elastic.inout',
-      repeat:       1,
-    });
-    
-    bouncyCircle.play()
-
   const controls = useAnimation()
   const list = { hidden: { opacity: 0 } }
   const item = { hidden: { x: -10, opacity: 0 } }
   const { scrollYProgress } = useViewportScroll();
   const history = useHistory();
-  
 
   function goToGitHub() {
     window.location.assign('https://github.com/DanePete');
@@ -49,6 +33,7 @@ import {
 
   return (
     <div className="landing-hero-container">
+      <div id="moon" class="light-beam"></div>
       <div className="header-section">
         <h1>Dane Petersen</h1>
         <i>Full Stack Web Developer, </i>
@@ -70,6 +55,20 @@ import {
         <div class="frame animate__animated animate__rubberBand animate__delay-1s animate__infinite"></div>
         <div class="frame animate__animated animate__rubberBand animate__delay-0.5s animate__infinite"></div>
       </div>
+
+      <div id="dance">
+        <span class="thought">
+          <div class="tought-message">
+            "The universe is a pretty big place. If it's just us, seems like an awful waste of space"
+          </div>
+          <div class="source clear">
+            - <i>Carl Sagan</i>
+          </div>
+        </span>
+        <image />
+        <img src="../../assets/tenor.gif"></img>
+      </div>
+
     </div>
   );
 };
