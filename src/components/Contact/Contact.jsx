@@ -9,7 +9,7 @@ function Contact() {
   return (
     <div className="container">
       <div>
-        <p>This about page is for anyone to read!</p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTJZ0dcB0WmBqYtzqB8A9S7dt7fp07zZmhLAaZCj1nCKlEzw/viewform?embedded=true" width="640" height="947" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
     </div>
   );

@@ -35,7 +35,7 @@ function App() {
               path="/contact"
             >
               <MenuNav />
-              <Hero />
+              {/* <Hero /> */}
               <Contact />
             </Route>   
 
@@ -43,6 +43,7 @@ function App() {
               exact
               path="/portfolio"
             >
+              <MenuNav />
               <Contact />
             </Route> 
 

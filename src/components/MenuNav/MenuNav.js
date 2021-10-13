@@ -11,7 +11,7 @@ class MenuNav extends React.Component {
   render () {
     return (
       <Menu right>
-        <Link className="navLink" to="/contact">
+        <Link className="navLink" to="/home">
           Home
         </Link>
 

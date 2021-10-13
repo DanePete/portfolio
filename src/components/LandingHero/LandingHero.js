@@ -12,44 +12,44 @@ import {
   } from "react-router-dom";
 
   const LandingHero = () => {
-  const controls = useAnimation()
-  const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+  // const controls = useAnimation()
+  // const scene = new THREE.Scene();
+  // const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-  const renderer = new THREE.WebGLRenderer();
-  renderer.setSize( window.innerWidth, window.innerHeight );
-  document.body.appendChild( renderer.domElement );
+  // const renderer = new THREE.WebGLRenderer();
+  // renderer.setSize( window.innerWidth, window.innerHeight );
+  // document.body.appendChild( renderer.domElement );
 
-  const geometry = new THREE.BoxGeometry();
-  const material = new THREE.MeshBasicMaterial( { color: 0xfff, flatShading: true, fog: true, reflectivity:true } );
-  const cube = new THREE.Mesh( geometry, material );
-  scene.add( cube );
+  // const geometry = new THREE.BoxGeometry();
+  // const material = new THREE.MeshBasicMaterial( { color: 0xfff, flatShading: true, fog: true, reflectivity:true } );
+  // const cube = new THREE.Mesh( geometry, material );
+  // scene.add( cube );
 
-  camera.position.z = 5;
+  // camera.position.z = 5;
 
-  const animate = function () {
-    requestAnimationFrame( animate );
+  // const animate = function () {
+  //   requestAnimationFrame( animate );
 
-    cube.rotation.x += 0.03;
-    cube.rotation.y += 0.01;
+  //   cube.rotation.x += 0.03;
+  //   cube.rotation.y += 0.01;
 
-    renderer.render( scene, camera );
-  };
+  //   renderer.render( scene, camera );
+  // };
 
-  animate();
+  // animate();
 
 
   function goToGitHub() {
     window.location.assign('https://github.com/DanePete');
   }
 
-  useEffect(() => {
-    controls.start(i => ({
-      opacity: 1,
-      x: 100,
-      transition: { delay: i * 9 },
-    }))
-  }, [])
+  // useEffect(() => {
+  //   controls.start(i => ({
+  //     opacity: 1,
+  //     x: 100,
+  //     transition: { delay: i * 9 },
+  //   }))
+  // }, [])
 
   
 
