@@ -54,30 +54,36 @@ import {
   
 
   return (
-    <div className="landing-hero-container">
+    <div className="landing-hero-container container">
       <div id="moon" class="light-beam"></div>
-      <div className="header-section">
-        <h1>Dane Petersen</h1>
-        <i>Full Stack Web Developer, </i>
-        <i>Designer</i>
-      </div>
-      <div id="bouncyCircle"></div>
-      <div className="infinity-container">
-        <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-4.5s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-4s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-3.5s animate__infinites"></div>
-        <div class="frame animate__animated animate__jello animate__delay-3s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-2.5s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-2s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-1.5s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-1s animate__infinite"></div>
-        <div class="frame animate__animated animate__jello animate__delay-0.5s animate__infinite"></div>
-      </div>
 
+      <div className="row">
+        <div className="col-sm">
+          <div className="header-section">
+            <h1>Dane Petersen</h1>
+            <i>Full Stack Web Developer, </i>
+            <i>Designer</i>
+          </div>
+          <div id="bouncyCircle"></div>         
+        </div>
+        <div className="col-sm">
+          <div className="infinity-container">
+            <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
+            <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
+            <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
+            <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
+            <div class="frame animate__animated animate__jello animate__delay-4.5s animate__infinite"></div>
+            <div class="frame animate__animated animate__jello animate__delay-4s animate__infinite"></div>
+            <div class="frame animate__animated animate__jello animate__delay-3.5s animate__infinites"></div>
+            <div class="frame animate__animated animate__jello animate__delay-3s animate__infinite"></div>
+            <div class="frame animate__animated animate__jello animate__delay-2.5s animate__infinite"></div>
+            <div class="frame animate__animated animate__jello animate__delay-2s animate__infinite"></div>
+            <div class="frame animate__animated animate__jello animate__delay-1.5s animate__infinite"></div>
+            <div class="frame animate__animated animate__jello animate__delay-1s animate__infinite"></div>
+            <div class="frame animate__animated animate__jello animate__delay-0.5s animate__infinite"></div>
+          </div>
+        </div>
+      </div>
       <div id="dance">
         <span class="thought">
           <div class="tought-message">
