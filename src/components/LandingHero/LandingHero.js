@@ -54,7 +54,7 @@ import {
   
 
   return (
-    <div className="landing-hero-container container">
+    <div className="landing-hero-container container-fluid">
       <div id="moon" class="light-beam"></div>
 
       <div className="row">
