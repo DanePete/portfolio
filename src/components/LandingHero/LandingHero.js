@@ -89,7 +89,7 @@ import {
         </span>
         <image />
         
-        <div className="dance-party-member-container container">
+        {/* <div className="dance-party-member-container container">
           <div className="row">
             <img src={image}></img>
             <img src={image}></img>
@@ -512,7 +512,7 @@ import {
           <img src={image}></img>
           <img src={image}></img>
           <img src={image}></img>                                                  
-        </div>
+        </div> */}
       </div>
 
     </div>
