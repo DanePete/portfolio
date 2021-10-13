@@ -2,14 +2,16 @@ import logo from './logo.svg';
 import './App.scss';
 import Hero from './components/Hero/hero';
 import SectionTwo from './components/SectionTwo/sectionTwo';
-import MenuNav from './components/MenuNav/MenuNav'
-import LandingHero from './components/LandingHero/LandingHero';
 import {
   HashRouter as Router,
   Redirect,
   Route,
   Switch,
 } from 'react-router-dom';
+
+import MenuNav from './components/MenuNav/MenuNav'
+import LandingHero from './components/LandingHero/LandingHero';
+import Contact from './components/Contact/Contact'
 
 function App() {
   return (
@@ -25,9 +27,36 @@ function App() {
             >
               <MenuNav />
               <LandingHero />
-              <Hero />
-              {/* <SectionTwo /> */}
+              {/* <Hero /> */}
             </Route>
+
+            <Route
+              exact
+              path="/contact"
+            >
+              <MenuNav />
+              <Hero />
+              <Contact />
+            </Route>   
+
+            <Route
+              exact
+              path="/portfolio"
+            >
+              <Contact />
+            </Route> 
+
+
+            <Route
+              exact
+              path="/contact"
+            >
+              <MenuNav />
+              <Contact />
+            </Route> 
+
+
+
             {/* If none of the other routes matched, we will show a 404. */}
             <Route>
               <h1>404</h1>
