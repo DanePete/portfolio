@@ -57,7 +57,7 @@ import {
     <div className="landing-hero-container container-fluid">
       <div id="moon" class="light-beam"></div>
       <div className="row landing-hero-row align-items-center">
-        <div className="col-sm">
+        <div className="col-sm landing-title">
           <div className="header-section">
             <h1>Dane Petersen</h1>
             <i>Full Stack Web Developer, </i>
@@ -65,7 +65,7 @@ import {
           </div>
           <div id="bouncyCircle"></div>         
         </div>
-        <div className="col-sm">
+        <div className="col-sm landing-animation">
           <div className="infinity-container">
             <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
             <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
