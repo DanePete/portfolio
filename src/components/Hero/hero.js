@@ -1,10 +1,18 @@
-import React, { useState, useEffect } from "react";
-import { motion, useAnimation, AnimatePresence, useViewportScroll } from "framer-motion";
-import {
-    BrowserRouter as Router,
-    useHistory,
-    useParams
-  } from "react-router-dom";
+  import React, { useState, useEffect } from "react";
+  import { motion, useAnimation, AnimatePresence, useViewportScroll } from "framer-motion";
+  import {
+      BrowserRouter as Router,
+      useHistory,
+      useParams
+    } from "react-router-dom";
+  import { createContact } from '../../graphql/mutations';
+
+  /* First import the API category from Amplify */
+  import { API } from 'aws-amplify';
+
+  /* For a dynamic form, create some local state to hold form input. This is pseudocode and will differ based on your JavaScript framework. */
+  const formState = { name: '', phone: '' };
+  
 
   const Hero = () => {
   const controls = useAnimation()
@@ -12,6 +20,33 @@ import {
   const item = { hidden: { x: -10, opacity: 0 } }
   const { scrollYProgress } = useViewportScroll();
   const history = useHistory();
+
+/* Create a function to update the form state. This is pseudocode and will differ based on your JavaScript framework.  */
+function updateFormState(key, value) {
+  formState[key] = value;
+}
+
+/* Create a function that will create a new contact */
+async function submitNewContact() {
+  try {
+    await API.graphql({
+      query: createContact,
+      variables: {
+        input: {
+          name: formState.name,
+          phone: formState.phone
+        }
+      }
+    })
+    console.log('New contact created!');
+  } catch (err) {
+    console.log({ err });
+  }
+}
+
+
+
+
 
   function goToGitHub() {
     window.location.assign('https://github.com/DanePete');
@@ -55,7 +90,7 @@ import {
               <h3>Dane Petersen</h3>
               <p>Pro Member</p>
             </div>
-            <div class="links">
+            {/* <div class="links">
               <div class="link">
                 <img src="./images/img1.png" alt="" />
                 <h2>Projects</h2>
@@ -72,11 +107,11 @@ import {
                 <img src="./images/img4.png" alt="" />
                 <h2>About</h2>
               </div>
-            </div>
-            <div class="pro">
+            </div> */}
+            {/* <div class="pro">
               <h2>Download Resume</h2>
               <img src="./images/img5.png" alt="" />
-            </div>
+            </div> */}
           </div>
 
           <div className="cards">
@@ -88,9 +123,14 @@ import {
               animate={{y: 10}}
               transition={{ duration: 9 }}
             >
-              <h5>Project 1</h5>
+              <div className="container">
+                /* Create the form inputs and button in the UI */
+                <input placeholder="phone" onChange={e => updateFormState('phone', e.target.value)} />
+                <input placeholder="name" onChange={e => updateFormState('name', e.target.value)} />
+                <button onClick={() => {submitNewContact()}}>Create New Contact</button>
+              </div>
             </motion.div>
-          <motion.div className="card"
+          {/* <motion.div className="card"
               initial={{y: -1000}}
               animate={{y: 10}}
               transition={{ duration: 8 }}
@@ -132,7 +172,7 @@ import {
               transition={{ duration: 3 }}
             >
                 <h5>Project 6</h5>
-            </motion.div>       
+            </motion.div>        */}
           </div>
         </div>
       </section>

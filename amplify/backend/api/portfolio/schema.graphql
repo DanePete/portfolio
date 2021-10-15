@@ -1,0 +1,13 @@
+type Todo @model @aws_api_key{
+  id: ID!
+  name: String!
+  description: String
+}
+
+type Contact @model(mutations: {
+  create: "createContact"
+}) @aws_api_key {
+  id: ID!
+  name: String!
+  phone: String!
+}
