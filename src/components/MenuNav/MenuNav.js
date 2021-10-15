@@ -15,24 +15,17 @@ class MenuNav extends React.Component {
           Home
         </Link>
 
-        <Link className="navLink" to="/portfolio">
+        {/* <Link className="navLink" to="/portfolio">
           Portfolio
         </Link>
 
         <Link className="navLink" to="/learn">
           Learn
-        </Link>
+        </Link> */}
 
         <Link className="navLink" to="/contact">
           Contact
         </Link>
-
-        {/* <a id="about" className="menu-item" href="/about">About</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
-        <Link className="navLink" to="/contact">
-                Login / Register
-        </Link> */}
-        <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
       </Menu>
     );
   }
