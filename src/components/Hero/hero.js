@@ -64,11 +64,11 @@ async function submitNewContact() {
   return (
     <div className="hero-container">
       <div className="work-in-progress"></div>
-      <div className="header-section">
+      {/* <div className="header-section">
         <h1>Dane Petersen</h1>
         <i>Full Stack Web Developer, </i>
         <i>Designer</i>
-      </div>
+      </div> */}
       <h2 className="work-in-progress">THIS IS A WORK IN PROGRESS</h2>
       <div className="cube"></div>
       <div className="cube"></div>
