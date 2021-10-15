@@ -36,7 +36,7 @@ function App() {
             >
               <MenuNav />
               {/* <Hero /> */}
-              <Hero />
+              <Contact />
             </Route>   
 
             <Route

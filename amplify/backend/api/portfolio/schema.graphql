@@ -1,12 +1,22 @@
-type Todo @model @aws_api_key{
+type Todo @model 
+@auth(
+    rules: [
+      { allow: owner }, # owner can update, delete, and read
+      { allow: private, operations: [read] }, # signed in users who are not the owner can read
+      { allow: public, operations: [read, update, delete] } # unauthenticated users can read
+    ]
+  ) 
+  @aws_iam @aws_cognito_user_pools
+  {
   id: ID!
   name: String!
   description: String
 }
 
-type Contact @model(mutations: {
+type Contact @model
+ (mutations: {
   create: "createContact"
-}) @aws_api_key {
+}) @aws_api_key @aws_cognito_user_pools {
   id: ID!
   name: String!
   phone: String!
