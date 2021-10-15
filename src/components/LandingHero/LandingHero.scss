@@ -33,14 +33,18 @@
 .frame {
   width: 25%;
   height: 25%;
-  position:absolute;
   border-radius: 50px;
   transform: rotate(40deg) translate(0px) translateZ(0px);
   box-shadow: 0px 0px 10px #00ccff,
   inset 0px 0px 10px #00ccff,
   0px 0px 20px #9c27b0,
   inset 0px 0px 20px #9c27b0;
+  text-align: center;
   // filter:brightness(1.5) contrast(2);
+}
+
+.frame a {
+  color: white;
 }
 
 .landing-hero-row {
@@ -239,7 +243,7 @@ strong {
 }
 
 .thought {
-  visibility: hidden;
+  // visibility: hidden;
   display:flex;
   flex-wrap: wrap;
   background-color:#fff;
@@ -325,27 +329,27 @@ strong {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  // .landing-hero-container {
-  //   background: blue !important;
-  // }
+  .danepetersen {
+    background: black;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  // .landing-hero-container {
-  //   background: blue !important;
-  // }
+  .danepetersen {
+    background: black;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  // .landing-hero-container {
-  //   background: blue !important;
-  // }
+  .danepetersen {
+    background: black;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  // .landing-hero-container {
-  //   background: blue !important;
-  // }
+  .danepetersen {
+    background: black;
+  }
 }
