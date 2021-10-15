@@ -56,8 +56,7 @@ import {
   return (
     <div className="landing-hero-container container-fluid">
       <div id="moon" class="light-beam"></div>
-
-      <div className="row">
+      <div className="row landing-hero-row align-items-center">
         <div className="col-sm">
           <div className="header-section">
             <h1>Dane Petersen</h1>
