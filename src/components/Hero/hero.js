@@ -1,5 +1,6 @@
   import React, { useState, useEffect } from "react";
   import { motion, useAnimation, AnimatePresence, useViewportScroll } from "framer-motion";
+  import Contact from "../Contact/Contact";
   import {
       BrowserRouter as Router,
       useHistory,
@@ -118,18 +119,13 @@ async function submitNewContact() {
 
           {/* TODO: Convert to loop */}
 
-          <motion.div className="card"
+          {/* <motion.div className="card"
               initial={{y: -1000}}
               animate={{y: 10}}
               transition={{ duration: 9 }}
             >
-              <div className="container">
-                /* Create the form inputs and button in the UI */
-                <input placeholder="phone" onChange={e => updateFormState('phone', e.target.value)} />
-                <input placeholder="name" onChange={e => updateFormState('name', e.target.value)} />
-                <button onClick={() => {submitNewContact()}}>Create New Contact</button>
-              </div>
-            </motion.div>
+            <Contact />
+            </motion.div> */}
           {/* <motion.div className="card"
               initial={{y: -1000}}
               animate={{y: 10}}
@@ -165,14 +161,14 @@ async function submitNewContact() {
               transition={{ duration: 4 }}
             >
                 <h5>Project 5</h5>
-            </motion.div>
+            </motion.div> */}
             <motion.div className="card"
               initial={{y: -1000}}
               animate={{y: 10}}
               transition={{ duration: 3 }}
             >
-                <h5>Project 6</h5>
-            </motion.div>        */}
+                <Contact />
+            </motion.div>       
           </div>
         </div>
       </section>

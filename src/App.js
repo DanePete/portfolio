@@ -36,7 +36,7 @@ function App() {
             >
               <MenuNav />
               {/* <Hero /> */}
-              <Contact />
+              <Hero />
             </Route>   
 
             <Route
@@ -53,7 +53,7 @@ function App() {
               path="/contact"
             >
               <MenuNav />
-              <Contact />
+              <Hero />
             </Route> 
 
 
