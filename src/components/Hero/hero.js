@@ -68,7 +68,7 @@ async function submitNewContact() {
         <i>Full Stack Web Developer, </i>
         <i>Designer</i>
       </div>
-      {/* <h2 className="work-in-progress">THIS IS A WORK IN PROGRESS</h2> */}
+      <h2 className="work-in-progress">THIS IS A WORK IN PROGRESS</h2>
       <div className="cube"></div>
       <div className="cube"></div>
       <div className="cube"></div>
@@ -87,8 +87,8 @@ async function submitNewContact() {
           <div class="dashboard">
             <div class="user">
               <img src="./images/img.png" alt="" />
-              <h3>Dane Petersen</h3>
-              <p>Pro Member</p>
+              <h3>Contact</h3>
+              <p>Dane Petersen</p>
             </div>
             {/* <div class="links">
               <div class="link">

@@ -58,7 +58,7 @@ import {
   return (
     <div className={moon_hover.space_is_awesome + " landing-hero-container space-is-quiet container-fluid"}>
       <div id="moon" class="light-beam" onMouseEnter={() => set_moon_hover({moon_hover:'moon-hover', space_is_awesome: 'space-is-awesome'})}  onMouseLeave={() => set_moon_hover({moon_hover:'moon-hide', space_is_awesome: 'space-is-quiet'})}></div>
-      <div className="row landing-hero-row align-items-center">
+      <div className="row landing-hero-row align-items-center row justify-content-center align-self-center">
         <div className="col-sm landing-title">
           <div className="header-section">
             <h1>Dane Petersen</h1>
@@ -69,21 +69,21 @@ import {
         </div>
         <div className="col-sm landing-animation">
           <div className="infinity-container">
-            <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
-            <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
-            <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
-            <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
-            <div class="frame animate__animated animate__jello animate__delay-4.5s animate__infinite"></div>
-            <div class="frame animate__animated animate__jello animate__delay-4s animate__infinite"></div>
-            <div class="frame animate__animated animate__jello animate__delay-3.5s animate__infinites">
-              <a href="/home">Welcome</a>
+            <div class="frame animate__animated animate__rubberBand animate__delay-5s animate__infinite"></div>
+            <div class="frame animate__animated animate__rubberBand animate__delay-5s animate__infinite"></div>
+            <div class="frame animate__animated animate__rubberBand animate__delay-5s animate__infinite"></div>
+            <div class="frame animate__animated animate__rubberBand animate__delay-5s animate__infinite"></div>
+            <div class="frame animate__animated animate__rubberBand animate__delay-4.5s animate__infinite"></div>
+            <div class="frame animate__animated animate__rubberBand animate__delay-4s animate__infinite"></div>
+            <div class="frame animate__animated animate__rubberBand animate__delay-3.5s animate__infinites">
+              <a className="align-self-center" href="/home">Welcome</a>
             </div>
-            <div class="frame animate__animated animate__jello animate__delay-3s animate__infinite"></div>
-            <div class="frame animate__animated animate__jello animate__delay-2.5s animate__infinite"></div>
-            <div class="frame animate__animated animate__jello animate__delay-2s animate__infinite"></div>
-            <div class="frame animate__animated animate__jello animate__delay-1.5s animate__infinite"></div>
-            <div class="frame animate__animated animate__jello animate__delay-1s animate__infinite"></div>
-            <div class="frame animate__animated animate__jello animate__delay-0.5s animate__infinite"></div>
+            <div class="frame animate__animated animate__rubberBand animate__delay-3s animate__infinite"></div>
+            <div class="frame animate__animated animate__rubberBand animate__delay-2.5s animate__infinite"></div>
+            <div class="frame animate__animated animate__rubberBand animate__delay-2s animate__infinite"></div>
+            <div class="frame animate__animated animate__rubberBand animate__delay-1.5s animate__infinite"></div>
+            <div class="frame animate__animated animate__rubberBand animate__delay-1s animate__infinite"></div>
+            <div class="frame animate__animated animate__rubberBand animate__delay-0.5s animate__infinite"></div>
           </div>
         </div>
       </div>
