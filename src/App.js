@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <div className="main">
-        <div className="container-fluid">
+        <div className="container-fluid danepetersen">
           <Switch>
             {/* Visiting localhost:3000 will redirect to localhost:3000/home */}
             <Redirect exact from="/" to="/home" />
