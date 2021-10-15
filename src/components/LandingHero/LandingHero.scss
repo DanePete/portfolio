@@ -236,6 +236,8 @@ strong {
   position: fixed;
   bottom: 0;
   right: 0;
+  // transition: 700ms;
+  transition: opacity 1 s ease;
 }
 
 #dance img {

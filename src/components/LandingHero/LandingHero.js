@@ -13,7 +13,7 @@ import {
 
   const LandingHero = () => {
 
-    const [moon_hover, set_moon_hover] = useState({moon_hover: 'moon-hide'});
+    const [moon_hover, set_moon_hover] = useState({moon_hover: 'moon-hide', space_is_awesome: 'space-is-quiet'});
   // const controls = useAnimation()
   // const scene = new THREE.Scene();
   // const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -56,8 +56,8 @@ import {
   
 
   return (
-    <div className="landing-hero-container space-is-awesome container-fluid">
-      <div id="moon" class="light-beam" onMouseEnter={() => set_moon_hover({moon_hover:'moon-hover'})}  onMouseLeave={() => set_moon_hover({moon_hover:'moon-hide'})}></div>
+    <div className={moon_hover.space_is_awesome + " landing-hero-container space-is-quiet container-fluid"}>
+      <div id="moon" class="light-beam" onMouseEnter={() => set_moon_hover({moon_hover:'moon-hover', space_is_awesome: 'space-is-awesome'})}  onMouseLeave={() => set_moon_hover({moon_hover:'moon-hide', space_is_awesome: 'space-is-quiet'})}></div>
       <div className="row landing-hero-row align-items-center">
         <div className="col-sm landing-title">
           <div className="header-section">
@@ -69,7 +69,6 @@ import {
         </div>
         <div className="col-sm landing-animation">
           <div className="infinity-container">
-            <h4>hello</h4>
             <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
             <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
             <div class="frame animate__animated animate__jello animate__delay-5s animate__infinite"></div>
@@ -77,7 +76,7 @@ import {
             <div class="frame animate__animated animate__jello animate__delay-4.5s animate__infinite"></div>
             <div class="frame animate__animated animate__jello animate__delay-4s animate__infinite"></div>
             <div class="frame animate__animated animate__jello animate__delay-3.5s animate__infinites">
-              <a href="/home">Hello</a>
+              <a href="/home">Welcome</a>
             </div>
             <div class="frame animate__animated animate__jello animate__delay-3s animate__infinite"></div>
             <div class="frame animate__animated animate__jello animate__delay-2.5s animate__infinite"></div>
